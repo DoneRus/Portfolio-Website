@@ -6,6 +6,9 @@
     
 }
 
+body {
+  overflow-x: hidden;
+}
 .lang { display: none; }
 .lang.active { display: block; }
 
