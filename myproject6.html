@@ -49,14 +49,14 @@
 <!-- ----English divident--- -->
   <p class="container lang nl">Lorem NederlandsLorem NederlandsLorem NederlandsLorem NederlandsLorem NederlandsLorem NederlandsLorem NederlanLorem NederlandsLorem NederlandsLorem NederlandsLorem NederlandsLorem NederlandsLorem NederlandsLorem NederlandsLorem Nederlandsds</p>
 
-<ul class="container list lang en active" style="text-align: start; margin-left: -5%;">
+<ul class="container list lang en active">
   <li>Charter 1</li>
   <li>Charter 2</li>
   <li>Charter 3</li>
   <li>Charter 4</li>
 </ul>
 <!-- ----English divident--- -->
-<ul class="container list lang nl" style="text-align: start; margin-left: -5%;">
+<ul class="container list lang nl">
   <li>khar 1</li>
   <li>khar 2</li>
   <li>khar 3</li>
@@ -185,31 +185,13 @@
         <form action="index.html">
         <button type="submit"class="btn btn-warning">Go back</button>
         </form>
-        <p><a href="">Email: bogdan.bunea07@gmail.com</a></p>
-        <p><a href="">Call me:+12345678910</a></p>
+        <p style="color: white;">Email: <span class="copyable" style="color: white;">bogdan.bunea07@gmail.com</span></p>
+        <p style="color: white;">Call me: <span class="copyable" style="color: white;">+31 6 81002367</span></p>
+
+         <div id="customAlert" class="custom-alert"></div>
     </section>
 
-    <script> 
-      function switchLanguage(lang) {
-    document.querySelectorAll('.lang').forEach(element => {
-        element.classList.remove('active');
-    });
-    document.querySelectorAll('.' + lang).forEach(element => {
-        element.classList.add('active');
-    });
-}
-document.getElementById('switch').addEventListener('change', function () {
-    if (this.checked) {
-        switchLanguage('nl')
-      // Call a function or execute code when the switch is turned on
-      console.log('Switch is ON');
-    } else {
-        switchLanguage('en')
-      // Call a function or execute code when the switch is turned off
-      console.log('Switch is OFF');
-    }
-  });
-    </script>
+    <script src="changeText.js"> </script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>

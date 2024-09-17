@@ -49,7 +49,7 @@
 <!-- ----English divident--- -->
   <p class="container lang nl">Dit project was bedoeld om ons te testen en ons te leren over onze solide kennis van PHP en MySql. Het legde ook een basis voor ons door ons enkele basisdingen te presenteren die een website moet hebben. In mijn geval waren dat een winkelwagen, een inlog/aanmeldsysteem, een sessie om te onthouden, een functie voor het versturen van e-mails en ook het hosten van de website.</p>
 
-<ul class="container list lang en active" style="text-align: start; margin-left: -5%;">
+<ul class="container list lang en active" >
   <li>-This project need a hosting service to work</li>
   <li>-This was done with a team of 2.</li>
   <li>-We learned a lot of things to accomplish this </li>
@@ -59,7 +59,7 @@
   
 </ul>
 <!-- ----English divident--- -->
-<ul class="container list lang nl" style="text-align: start; margin-left: -5%;">
+<ul class="container list lang nl" >
   <li>-Deze project moet een hosting service hebben om het te werken</li>
   <li>-Dit werd gedaan met een team van 2.</li>
   <li>-We hebben veel geleerd om dit te bereiken.  </li>
@@ -228,31 +228,18 @@
         <form action="index.html">
         <button type="submit"class="btn btn-warning">Go back</button>
         </form>
-        <p><a href="">Email: bogdan.bunea07@gmail.com</a></p>
-        <p><a href="">Call me:+12345678910</a></p>
+        <p style="color: white;">Email: <span class="copyable" style="color: white;">bogdan.bunea07@gmail.com</span></p>
+        <p style="color: white;">Call me: <span class="copyable" style="color: white;">+31 6 81002367</span></p>
+        <p style="color:white">Find me:</p>
+        <table class="logoTable">
+          <tr >
+            <th><a href="https://github.com/DoneRus"><img class="imgLogo" src="img/github-mark-white.png" alt="Card image6"></a></th>
+            <th><a href="https://www.linkedin.com/in/bunea-bogdan-9130342a0/"><img class="imgLogo" src="img/LI-In-Bug.png" alt="Card image6"></a></th>
+          </tr>
+        <div id="customAlert" class="custom-alert"></div>
     </section>
 
-    <script> 
-      function switchLanguage(lang) {
-    document.querySelectorAll('.lang').forEach(element => {
-        element.classList.remove('active');
-    });
-    document.querySelectorAll('.' + lang).forEach(element => {
-        element.classList.add('active');
-    });
-}
-document.getElementById('switch').addEventListener('change', function () {
-    if (this.checked) {
-        switchLanguage('nl')
-      // Call a function or execute code when the switch is turned on
-      console.log('Switch is ON');
-    } else {
-        switchLanguage('en')
-      // Call a function or execute code when the switch is turned off
-      console.log('Switch is OFF');
-    }
-  });
-    </script>
+    <script src="changeText.js"> </script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
