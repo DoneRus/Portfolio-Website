@@ -1,0 +1,12 @@
+  [
+    {
+      "title": "Webshop",
+      "image": "img/webstorehome.jpg",
+      "link": "myproject1.html"
+    },
+  {
+    "title": "Webshop 2",
+    "image": "img/homewebstore2.png",
+    "link": "myproject2.html"
+  }
+]
