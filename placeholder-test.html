@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Placeholder Template</title>
+  <style>
+    :root {
+      --bg: #131516;
+      --card: #1f2326;
+      --text: #f1f2f3;
+      --muted: #9ba1a7;
+      --accent: #ed9d00;
+      --border: rgba(255,255,255,0.08);
+      font-family: Inter, system-ui, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top, #1b1f24 0%, #111315 70%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .page-container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 0;
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      overflow: hidden;
+      background: rgba(255,255,255,0.02);
+    }
+
+    .lang-switch button {
+      border: none;
+      background: transparent;
+      color: var(--text);
+      padding: 10px 16px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .lang-switch button.active,
+    .lang-switch button:hover {
+      background: rgba(237, 157, 0, 0.18);
+      color: #fff;
+    }
+
+    .section {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 28px;
+      margin-top: 24px;
+    }
+
+    .section h2 {
+      margin-top: 0;
+      font-size: 1.8rem;
+      letter-spacing: -0.04em;
+    }
+
+    .section p,
+    .section ul {
+      margin-top: 1rem;
+    }
+
+    .section ul {
+      padding-left: 20px;
+    }
+
+    .code-note {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      display: grid;
+      gap: 18px;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.05;
+    }
+
+    .grid-2 {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    }
+
+    .card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 1.1rem;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      margin: 32px 0 16px;
+      font-size: 0.95rem;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    .copy-block {
+      background: rgba(237,157,0,0.08);
+      border-left: 4px solid var(--accent);
+      padding: 14px 18px;
+      margin-top: 20px;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-container">
+    <header class="toolbar">
+      <div class="lang-switch" role="tablist" aria-label="Language switch">
+        <button id="btn-en" class="active" type="button" role="tab" aria-selected="true">English</button>
+        <button id="btn-nl" type="button" role="tab" aria-selected="false">Nederlands</button>
+      </div>
+      <a class="source-link" href="https://github.com/DoneRus/Portfolio-Website" target="_blank" rel="noopener">Source repository</a>
+    </header>
+
+    <section class="section hero">
+      <span class="code-note">Edit the text below directly. Each section is labeled so you can paste your content quickly.</span>
+      <div>
+        <h1 class="lang lang-en">Project placeholder title</h1>
+        <h1 class="lang lang-nl hidden">Project voorbeeldtitel</h1>
+      </div>
+      <div>
+        <p class="lang lang-en">Paste a short English project description here. Replace this sentence with the information you want users to read first.</p>
+        <p class="lang lang-nl hidden">Plak een korte Nederlandse projectbeschrijving hier. Vervang deze zin met de tekst die je wilt laten zien.</p>
+      </div>
+      <div class="copy-block">
+        <strong>Tip:</strong> keep each section short and use consistent wording. For faster editing, replace only the text between the tags.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Project overview</h2>
+      <p class="lang lang-en">Paste the overview information here. Use one paragraph or separate bullets for the main features and goals.</p>
+      <p class="lang lang-nl hidden">Plak de overzichtsinformatie hier. Gebruik één alinea of meerdere regels voor de belangrijkste functies en doelen.</p>
+      <ul class="lang lang-en">
+        <li>Feature or main point 1</li>
+        <li>Feature or main point 2</li>
+        <li>Feature or main point 3</li>
+      </ul>
+      <ul class="lang lang-nl hidden">
+        <li>Functie of belangrijkste punt 1</li>
+        <li>Functie of belangrijkste punt 2</li>
+        <li>Functie of belangrijkste punt 3</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>What we did</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>English</h3>
+          <p class="lang lang-en">List the tasks, development steps, or planning details you want to show in English.</p>
+          <p class="lang lang-nl hidden">Vermeld de taken, ontwikkelingsstappen of planningsdetails die je in het Nederlands wilt laten zien.</p>
+        </div>
+        <div class="card">
+          <h3>Project notes</h3>
+          <p>Add quick bullet points directly in the HTML to structure the content before publishing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Tools used</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>HTML</h3>
+          <p>Use this card to describe the role of HTML in the project.</p>
+        </div>
+        <div class="card">
+          <h3>CSS</h3>
+          <p>Use this card to describe the role of CSS in the project.</p>
+        </div>
+        <div class="card">
+          <h3>JavaScript / PHP / Backend</h3>
+          <p>Use this card to describe dynamic or backend features.</p>
+        </div>
+        <div class="card">
+          <h3>Collaboration</h3>
+          <p>Use this card to describe tools like GitHub, Teams, Trello, or similar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Final result</h2>
+      <p class="lang lang-en">Describe the final product here, including the main features users can see and interact with.</p>
+      <p class="lang lang-nl hidden">Beschrijf het eindproduct hier, inclusief de belangrijkste functies die gebruikers kunnen zien en gebruiken.</p>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Screenshot or image 1</h3>
+          <p>Add the image path or description in the HTML source if you want to display project images.</p>
+        </div>
+        <div class="card">
+          <h3>Screenshot or image 2</h3>
+          <p>Replace this text with the description of the final result in your project.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> <span class="copyable">bogdan.bunea07@gmail.com</span></p>
+      <p><strong>Phone:</strong> <span class="copyable">+31 6 81002367</span></p>
+    </section>
+
+    <div class="footer">Open this file and replace the text inside the sections to update the project placeholder. The structure is intended for easy copy/paste editing.</div>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll('.lang-switch button');
+    const englishNodes = document.querySelectorAll('.lang-en');
+    const dutchNodes = document.querySelectorAll('.lang-nl');
+
+    function setLanguage(language) {
+      buttons.forEach(button => {
+        const isActive = button.id === `btn-${language}`;
+        button.classList.toggle('active', isActive);
+        button.setAttribute('aria-selected', isActive);
+      });
+
+      englishNodes.forEach(node => node.classList.toggle('hidden', language !== 'en'));
+      dutchNodes.forEach(node => node.classList.toggle('hidden', language !== 'nl'));
+    }
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const newLang = button.id === 'btn-en' ? 'en' : 'nl';
+        setLanguage(newLang);
+      });
+    });
+  </script>
+</body>
+</html>
